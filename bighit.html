@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bighit.css">
+</head>
+<body>
+<div class="mainbody">
+    <div id="main">
+        <div class="header">
+            <div class="first">
+                <button class="icon">
+                    <div class="div" id="div1"></div>
+                    <div class="div" id="div2"></div>
+                    <div class="div" id="div3"></div>
+                </button>
+                <script>
+                    const toggleables = document.querySelectorAll('.icon')
+
+                    const toggleIcon = (e) => {
+                    const icon = e.composedPath().find((el) =>  el.classList.contains('icon'));
+                    
+                    if (icon.classList.contains('toggled')) {
+                        icon.classList.remove('toggled');
+                    } else {
+                        icon.classList.add('toggled');
+                    }
+                    };
+
+                    toggleables.forEach((icon) => {
+                    icon.addEventListener('click', toggleIcon);
+                    });
+
+
+                </script>
+            </div>
+            <div class="second">
+            </div>
+            <nav>
+            <div class="third">
+                
+                <div class="language">
+                    <button type="button" style="margin-left:63px;">ENG</button>
+                    
+                    <ul class="ul">
+                        <button>△</button>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">JPN</a></li>
+                        <li><a href="#">CHI</a></li>
+
+                    </ul>
+                
+            </div>
+        </div>
+            </nav>
+            
+            </div>
+        
+    
+<div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+    
+        <div class="img1">
+        </div>
+        <div class="img2">
+            <button class="text1">minisode 2:<br>Thursday's Child</button>
+        </div>
+        <div class="img3">
+        </div>
+        <div class="img4">
+            <button class="text2">The Chaos Chapter:<br>FIGHT OR ESCAPE</button>
+        </div>
+        <div class="img5">
+            <button class="text3">MOON IN THE OCEAN</button>
+        </div>
+        
+        
+    <div class="navigation-manual">
+            <label for="radio1"class="manual-btn"></label>
+            <label for="radio2"class="manual-btn"></label>
+            <label for="radio3"class="manual-btn"></label>
+            <label for="radio4"class="manual-btn"></label>
+            <label for="radio5"class="manual-btn"></label>
+            
+        
+
+        </div>
+    </div>
+    
+
+</div>
+
+        <div class="footer">
+
+        </div>
+</div>
+
+    
+
+    
+</body>
+</html>
